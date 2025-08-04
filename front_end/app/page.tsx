@@ -61,7 +61,7 @@ export default function Home() {
 
     try {
       setIsLoading(true);
-      const res = await fetch("heart-disease-predictor-production.up.railway.app/predict", {
+      const res = await fetch("https://heart-disease-predictor-production.up.railway.app/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
