@@ -41,3 +41,7 @@ def predict(data:PatientData):
     input_scaled = scaler.transform([input_data])
     prediction = model.predict(input_scaled)
     return {"prediction": int(prediction[0])}
+
+@app.get('/')
+def hello():
+    return{"message":"hello"}
